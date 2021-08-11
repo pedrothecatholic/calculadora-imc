@@ -1,0 +1,16 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url(background.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right;
+    background-color: #000a;
+    background-blend-mode: darken;
+    height: 100vh;
+    width: 100vw;
+}
