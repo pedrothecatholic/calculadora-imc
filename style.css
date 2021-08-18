@@ -141,6 +141,14 @@ footer span {
     font-weight: 200;
 }
 
+.blue{
+    color: blue;
+}
+
+.red{
+    color: red;
+}
+
 @media (max-width: 768px) {
     .categorias {
         display: none;

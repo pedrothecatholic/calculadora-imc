@@ -3,20 +3,25 @@ function calcularIMC(peso, altura) {
 }
 
 function classificar(imc){
+
+    let 
+    let
+    let
+    let
     
     let classificacao = ''
     if(imc < 18.5){
         classificacao = 'abaixo do peso'
     } else if (imc < 25) {
-        classificacao = 'com peso ideal. Parabéns!'
+        classificacao = 'com peso ideal. <span class="blue">Parabéns! </span>'
     } else if (imc < 30) {
         classificacao = 'levemente acima do peso.'
     } else if (imc < 35) {
         classificacao = 'com obesidade grau I.'
     } else if (imc < 40) {
         classificacao = 'com obesidade grau II.'
-    } else{
-        classificacao = 'com obesidade grau III.'
+    } else {
+        classificacao = 'com obesidade grau III. <span class="red">Cuidado! </span>'
     }
 
     return classificacao
@@ -37,7 +42,7 @@ function exibirResultado(){
         const imc = calcularIMC(peso, altura)
         const classificacao = classificar (imc)
             
-        resultado.textContent = `${nome} seu IMC é ${imc.replace('.', ',')} e você está ${classificacao}`
+        resultado.innerHTML = `${nome} seu IMC é ${imc.toString().replace('.', ',')} e você está ${classificacao}`
     } else {
         resultado.textContent = `Preencha todos os campos!`
     }
